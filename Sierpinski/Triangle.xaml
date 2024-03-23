@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Algo8.Sierpinski.Triangle"
+             xmlns:drawable="clr-namespace:Algo8.Sierpinski"
+             Title="Треугольник Серпинского">
+
+    <ContentPage.Resources>
+        <drawable:TriangleDrawable x:Key="drawable" />
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Spacing="20" Margin="20" >
+
+        <Slider x:Name="Slider" Minimum="1" Maximum="8" ValueChanged="Slider_ValueChanged"/>
+
+        <GraphicsView x:Name="triangleCanvas"
+                      Drawable="{StaticResource drawable}"
+                      HeightRequest="1000"
+                      WidthRequest="1000"
+                      />
+
+    </VerticalStackLayout>
+
+</ContentPage>

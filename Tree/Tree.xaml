@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Algo8.Tree.Tree"
+             xmlns:drawable="clr-namespace:Algo8.Tree"
+             Title="Tree">
+
+    <ContentPage.Resources>
+        <drawable:TreeDrawable x:Key="drawable" />
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Spacing="20" Margin="20">
+
+        <Slider x:Name="Slider" Minimum="1" Maximum="8" ValueChanged="Slider_ValueChanged"/>
+
+        <GraphicsView x:Name="treeCanvas"
+                      Drawable="{StaticResource drawable}"
+                      HeightRequest="1000"
+                      WidthRequest="1200"
+                      BackgroundColor="AliceBlue"/>
+
+    </VerticalStackLayout>
+</ContentPage>
