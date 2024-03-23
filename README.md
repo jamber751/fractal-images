@@ -15,11 +15,11 @@ An application to generate fractal images: Sierpinski Triangle and a Fractal Tre
 
 ## Screenshots
 
-<div>
+<div align='center'>
 	<table>
 		<tr>
-			<td><img width="200" src="readme_img/triangle.png" alt="triangle" title="triangle"/></td>
-			<td><img width="200" src="readme_img/tree.png" alt="tree" title="tree"/></td>
+			<td><img width="300" src="readme_img/triangle.png" alt="triangle" title="triangle"/></td>
+			<td><img width="300" src="readme_img/tree.png" alt="tree" title="tree"/></td>
 		</tr>
 	</table>
 </div>
